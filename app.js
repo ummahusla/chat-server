@@ -53,4 +53,4 @@ io.sockets.on('connection', function(socket) {
 // Listen on port 8080 and logout console message.
 var port = 8080;
 server.listen(port);
-cosnole.log('Listening on port: ' + port);
+console.log('Listening on port: ' + port);
