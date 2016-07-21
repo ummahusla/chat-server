@@ -1,0 +1,23 @@
+{
+  "name": "chat-server",
+  "version": "1.0.0",
+  "description": "A basic chat server usign WebSockets and Socket.io",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "chat",
+    "websockets",
+    "socket.io",
+    "server",
+    "nodejs"
+  ],
+  "author": "Edvins Antonovs",
+  "license": "BSD",
+  "private": true,
+  "dependencies": {
+      "express": "3.0.x",
+      "socket.io": "0.9.x"
+  }
+}
