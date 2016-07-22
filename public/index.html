@@ -1,0 +1,35 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Chat Server</title>
+    <meta name="author" content="Edvins Antonovs">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/socket.io.js"></script>
+    <script src="js/scripts.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    </head>
+
+    <body>
+
+        <div class="userContainer">
+            <h2>Users</h2>
+            <div id="users"></div>
+        </div>
+
+        <div class="conversationContainer">
+            <input id="data" />
+            <input type="button" id="datasend" value="send" />
+            <div id="conversation"></div>
+        </div>
+
+    </body>
+</html>
