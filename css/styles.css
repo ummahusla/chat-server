@@ -1,0 +1,20 @@
+.userContainer {
+    float: left;
+    width: 200px;
+    border-right: 1px solid black;
+    height: 300px;
+    padding: 10px;
+    overflow: auto;
+}
+
+.conversationContainer {
+    float: left;
+    width: 400px;
+    height: 300px;
+    overflow: auto;
+    padding: 10px;
+}
+
+#data {
+    width: 250px;
+}
