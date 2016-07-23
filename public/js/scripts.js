@@ -16,6 +16,7 @@ function addUser() {
     var userNamePromt = prompt("What's your name?")
     var randomUserName = Math.random().toString(36).substr(2, 5);
 
+    // Checks if the prompt value is not empty
     if(!userNamePromt) {
         // username randomly generated
         socket.emit('adduser', randomUserName);
@@ -23,6 +24,14 @@ function addUser() {
         // username provided by user
         socket.emit('adduser', userNamePromt);
     }
+
+    // Checks if the user is connected
+    if(socket.socket.connected) {
+        userConnected = true;
+    } else {
+        userConnected = false;
+    }
+
 }
 
 // processMessage function is called when the chat service sends a message.
@@ -35,7 +44,7 @@ function processMessage(username, data) {
 function updateUserList(data) {
     $('#users').empty();
     $.each(data, function(key, value) {
-        $('#users').append('<div>' + key + '</div>');
+        $('#users').append('<div class="userClass">' + key + '</div>');
     });
 }
 
