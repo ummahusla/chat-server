@@ -4,7 +4,7 @@ TODO: Write a project description
 
 ## Installation and Usage
 
-1. `git clone https://github.com/ummahusla/Chat-Server /your-folder`
+1. `git clone https://github.com/ummahusla/Chat-Server.git /your-folder`
 2. `cd /your-folder`
 3. `node app.js`
 
