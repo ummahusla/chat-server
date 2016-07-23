@@ -1,4 +1,4 @@
-# Chat Server
+# Chat Server [WIP]
 
 TODO: Write a project description
 
