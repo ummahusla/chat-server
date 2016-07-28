@@ -6,7 +6,8 @@ TODO: Write a project description
 
 1. `git clone https://github.com/ummahusla/Chat-Server.git /your-folder`
 2. `cd /your-folder`
-3. `node app.js`
+3. `npm install`
+4. `node app.js`
 
 ## Contributing
 
