@@ -3,12 +3,14 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <meta name="author" content="Edvins Antonovs">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Chat Server</title>
-    <meta name="author" content="Edvins Antonovs">
 
+    <link rel="stylesheet" href="css/foundation.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/styles.css">
-
 
 
     <!--[if lt IE 9]>
@@ -18,20 +20,52 @@
 
     <body>
 
-        <div class="userContainer">
-            <h2>Users</h2>
-            <div id="users"></div>
+        <nav class="top-bar" data-topbar role="navigation">
+            <ul class="title-area">
+                <li class="name">
+                    <h1><a href="#">Chat Server</a></h1>
+                </li>
+                <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+                <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+            </ul>
+
+            <section class="top-bar-section">
+
+                <ul class="right">
+                    <li><a href="https://github.com/ummahusla/Chat-Server/">GitHub Repository</a></li>
+                </ul>
+
+
+            </section>
+        </nav>
+
+        <div class="small-2 columns">
+            <div class="userContainer">
+                <h2><i class="fa fa-users" aria-hidden="true"></i> Users</h2>
+                <div id="users"></div>
+            </div>
         </div>
 
-        <div class="conversationContainer">
+        <div class="small-5 columns">
+            <div class="conversationContainer">
+                <div id="conversation">
+                    Hey! Chat Server is built with Node.js, Express.js and Socket.io
+                </div>
+            </div>
+        </div>
+
+        <div class="small-5 columns left">
             <input id="data" />
-            <input type="button" id="datasend" value="send" />
-            <div id="conversation"></div>
+            <input class="button" type="button" id="datasend" value="send" />
         </div>
 
-        
         <script src="js/jquery-2.2.4.min.js"></script>
+        <script src="js/foundation.min.js"></script>
         <script src="js/socket.io.js"></script>
         <script src="js/scripts.js"></script>
+
+        <script>
+            $(document).foundation();
+        </script>
     </body>
 </html>

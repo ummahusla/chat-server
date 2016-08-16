@@ -37,7 +37,7 @@ function addUser() {
 // processMessage function is called when the chat service sends a message.
 // jQuery object with the response and insert message after converstaion.
 function processMessage(username, data) {
-    $('<b>' + username + ':</b> ' + data + '<br/>').insertAfter($('#conversation'));
+    $('<strong>' + username + ':</strong> ' + data + '<br/>').insertAfter($('#conversation'));
 }
 
 // updateUserList function is called when server sends an updated user list.
