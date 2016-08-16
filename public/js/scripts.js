@@ -58,7 +58,11 @@ function updateUserList(data) {
 function sendMessage() {
     var message = $('#data').val();
     $('#data').val('');
-    socket.emit('sendchat', message);
+    if(!message) {
+        sweetAlert("Oops...", "You've didn\'t entered a message!", "error");
+    } else {
+        socket.emit('sendchat', message);
+    }
     $('#data').focus();
 }
 
