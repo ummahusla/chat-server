@@ -1,4 +1,5 @@
 var socket;
+var userConnected;
 
 // Subscribe to the connect, updatechat, and updateusers events of the socket.
 $(document).ready(function() {
@@ -13,17 +14,22 @@ $(document).ready(function() {
 // Add the addUser function, which clals the emit method on the socket to call
 // the adduser method on the chat server.
 function addUser() {
-    var userNamePromt = prompt("What's your name?")
-    var randomUserName = Math.random().toString(36).substr(2, 5);
-
-    // Checks if the prompt value is not empty
-    if(!userNamePromt) {
-        // username randomly generated
-        socket.emit('adduser', randomUserName);
-    } else {
-        // username provided by user
-        socket.emit('adduser', userNamePromt);
-    }
+    var userNamePromt = swal({
+        title: "Please enter your username",
+        type: "input",
+        showCancelButton: false,
+        closeOnConfirm: false,
+        animation: "slide-from-top",
+        inputPlaceholder: "e.g Gavin Belson or Mr.Robot"
+    }, function(inputValue){
+        if (inputValue === false) return false;
+        if (inputValue === "") {
+             swal.showInputError("Hey, we need you to enter your username!");
+             return false
+         }
+         swal("Nice!", "Your username is " + inputValue, "success");
+         socket.emit('adduser', inputValue);
+     });
 
     // Checks if the user is connected
     if(socket.socket.connected) {
@@ -37,14 +43,14 @@ function addUser() {
 // processMessage function is called when the chat service sends a message.
 // jQuery object with the response and insert message after converstaion.
 function processMessage(username, data) {
-    $('<strong>' + username + ':</strong> ' + data + '<br/>').insertAfter($('#conversation'));
+    $('<span class="message"><strong>' + username + ':</strong> ' + data + '</span><br/>').insertAfter($('#conversation'));
 }
 
 // updateUserList function is called when server sends an updated user list.
 function updateUserList(data) {
     $('#users').empty();
     $.each(data, function(key, value) {
-        $('#users').append('<div class="userClass">' + key + '</div>');
+        $('#users').append('<div class="username"><i class="fa fa-user" aria-hidden="true"></i> ' + key + '</div>');
     });
 }
 
