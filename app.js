@@ -3,8 +3,7 @@ var app = express();
 var http = require('http');
 var server = http.createServer(app);
 var io = require('socket.io').listen(server);
-
-app.set('port', (process.env.PORT || 1337));
+var port = process.env.PORT || 1337;
 
 // Map statis request to the /public folder.
 app.use(express.static(__dirname + '/public'));
@@ -52,7 +51,6 @@ io.sockets.on('connection', function(socket) {
 
 });
 
-// Display the port number.
-app.listen(app.get('port'), function() {
-  console.log('Server started: http://localhost:' + app.get('port') + '/');
-});
+// Listen on port 1337 and logout console message.
+server.listen(port);
+console.log('Server started: http://localhost:' + port + '/');
