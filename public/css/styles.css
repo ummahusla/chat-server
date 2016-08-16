@@ -8,10 +8,21 @@
 .top-bar-section li:not(.has-form) a:not(.button) {
     font-weight: bold !important;
     background: #2c3e50 !important;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+.top-bar-section li:not(.has-form) a:not(.button):hover {
+    color: #f39c12 !important;
 }
 span a {
     color: #2c3e50 !important;
     border-bottom: 1px dotted #2c3e50 !important;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
 }
 span a:hover {
     color: #f39c12 !important;
