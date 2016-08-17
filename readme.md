@@ -9,7 +9,7 @@ Bonsua! [**Chat Server**](https://github.com/ummahusla/Chat-Server/) is built wi
 1. `git clone https://github.com/ummahusla/Chat-Server.git your-folder`
 2. `cd your-folder`
 3. `npm install`
-4. `node app.js`
+4. `node app.js` or `nodemon`
 
 ## Contributing
 
