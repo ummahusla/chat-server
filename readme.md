@@ -11,6 +11,8 @@ Bonsua! [**Chat Server**](https://github.com/ummahusla/Chat-Server/) is built wi
 3. `npm install`
 4. `node app.js` or `nodemon`
 
+P.S. In order to run a node on a different port, use `PORT=8080 node app.js`.
+
 ## Contributing
 
 1. Fork it!
