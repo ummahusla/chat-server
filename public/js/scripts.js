@@ -91,7 +91,7 @@ var TopBarBox = React.createClass({
 var ChatNoticeBox = React.createClass({
     render: function() {
         return (
-            <p><span id="#greeting">Bonsua!</span> <a href="https://github.com/ummahusla/Chat-Server/">Chat Server</a> is built with <a href="https://nodejs.org">Node.js</a>, <a href="http://expressjs.com/">Express.js</a> and <a href="http://socket.io/">Socket.io</a></p>
+            <p><span id="#greeting">Bonsua!</span> <a href="https://github.com/ummahusla/Chat-Server/">Chat Server</a> is built with <a href="https://facebook.github.io/react/">React</a>, <a href="https://nodejs.org">Node.js</a>, <a href="http://expressjs.com/">Express.js</a> and <a href="http://socket.io/">Socket.io</a></p>
         )
     }
 });
