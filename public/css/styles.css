@@ -13,7 +13,13 @@
     -webkit-transition: all .2s ease-in;
     transition: all .2s ease-in;
 }
-.top-bar-section li:not(.has-form) a:not(.button):hover {
+.top-bar .name h1 a {
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+.top-bar-section li:not(.has-form) a:not(.button):hover, .top-bar .name h1 a:hover {
     color: #f39c12 !important;
 }
 span a {
@@ -92,4 +98,12 @@ body, p, a, span, li, h1, h2, h3, h4, h5, h6, button, .button {
     background: #2c3e50 !important;
     font-weight: bold;
     border-radius: 5px;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+
+#message-wrap .send-msg:hover {
+    color: #f39c12 !important;
 }
