@@ -40,10 +40,20 @@ function addUser() {
 
 }
 
+// Get the current timestamp to display in the chat.
+function getCurrentTime() {
+    var datetime = new Date();
+    datetime.getHours();
+    datetime.getMinutes();
+    datetime.getSeconds();
+    return datetime.getHours() + ':' + datetime.getMinutes() + ':' + datetime.getSeconds();
+}
+
 // processMessage function is called when the chat service sends a message.
 // jQuery object with the response and insert message after converstaion.
 function processMessage(username, data) {
-    $('<span class="message"><strong>' + username + ':</strong> ' + data + '</span><br/>').insertAfter($('#conversation'));
+
+    $('<span class="message">' + '[' + getCurrentTime() + '] ' + '<strong>' + username + ':</strong> ' + data + '</span><br/>').insertAfter($('#conversation'));
 }
 
 // updateUserList function is called when server sends an updated user list.
