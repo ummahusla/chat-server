@@ -1,6 +1,44 @@
 console.log(React);
 console.log(ReactDOM);
 
+var socket;
+var userConnected;
+
+socket = io.connect('http://localhost:1337');
+socket.on('connect', addUser);
+socket.on('updatechat', processMessage);
+socket.on('updateusers', updateUserList);
+
+// Add the addUser function, which clals the emit method on the socket to call
+// the adduser method on the chat server.
+function addUser() {
+    var userNamePromt = swal({
+        title: "Please enter your username",
+        type: "input",
+        showCancelButton: false,
+        closeOnConfirm: false,
+        animation: "slide-from-top",
+        inputPlaceholder: "e.g Gavin Belson or Mr.Robot"
+    }, function(inputValue){
+        if (inputValue === false) return false;
+        if (inputValue === "") {
+             swal.showInputError("Hey, we need you to enter your username!");
+             return false
+         }
+         inputValue = inputValue.replace(/<(?:.|\n)*?>/gm, '');
+         swal("Nice!", "Your username is " + inputValue, "success");
+         socket.emit('adduser', inputValue);
+     });
+
+    // Checks if the user is connected
+    if(socket.socket.connected) {
+        userConnected = true;
+    } else {
+        userConnected = false;
+    }
+
+}
+
 var TopBarBox = React.createClass({
   render: function() {
     return (
