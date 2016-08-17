@@ -20,7 +20,21 @@
     transition: all .2s ease-in;
 }
 .top-bar-section li:not(.has-form) a:not(.button):hover, .top-bar .name h1 a:hover {
-    color: #f39c12 !important;
+    color: #fff !important;
+}
+.top-bar.expanded .toggle-topbar a {
+    color: #fff !important;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+.top-bar.expanded .toggle-topbar a span::after {
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+    box-shadow: 0 0 0 1px #fff,0 7px 0 1px #fff,0 14px 0 1px #fff;
 }
 span a {
     color: #2c3e50 !important;
@@ -47,7 +61,7 @@ body, p, a, span, li, h1, h2, h3, h4, h5, h6, button, .button {
     font-family: 'Inconsolata', monospace !important;
 }
 .body-wrap {
-    height: 80vh;
+    height: 600px;
 }
 
 #users-wrap {
@@ -63,7 +77,7 @@ body, p, a, span, li, h1, h2, h3, h4, h5, h6, button, .button {
     margin-bottom: 10px;
     border: 1px dotted #2c3e50;
     text-align: center;
-    padding: 10px 0;
+    padding: 10px 5px;
     border-radius: 5px;
 }
 
@@ -106,4 +120,29 @@ body, p, a, span, li, h1, h2, h3, h4, h5, h6, button, .button {
 
 #message-wrap .send-msg:hover {
     color: #f39c12 !important;
+}
+
+/* RWD */
+@media only screen and (max-width: 40.0625em) {
+    .body-wrap {
+        height: 300px;
+    }
+    #message-wrap {
+        padding: 65px 15px 0;
+    }
+}
+
+@media only screen and (min-width: 40.0625em) {
+    .body-wrap {
+        height: 400px;
+    }
+    #message-wrap {
+        padding: 40px 15px 0;
+    }
+}
+
+@media only screen and (min-width: 64.0625em) {
+    #message-wrap {
+        padding: 30px 30px 0 0;
+    }
 }
