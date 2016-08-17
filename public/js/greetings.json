@@ -1,0 +1,102 @@
+var greetings = [
+    {
+        "greeting": "Salut",
+        "language": "French",
+        "country": "France"
+    },
+    {
+        "greeting": "Hallo",
+        "language": "German",
+        "country": "Germany"
+    },
+    {
+        "greeting": "Ciao",
+        "language": "Italian",
+        "country": "Italia"
+    },
+    {
+        "greeting": "Ahoj",
+        "language": "Czech",
+        "country": "Czech Republic"
+    },
+    {
+        "greeting": "YAH sahs",
+        "language": "Greek",
+        "country": "Greece"
+    },
+    {
+        "greeting": "Hallo",
+        "language": "Dutch",
+        "country": "Netherlands"
+    },
+    {
+        "greeting": "Udvozlom",
+        "language": "Hungarian",
+        "country": "Hungary"
+    },
+    {
+        "greeting": "Hej",
+        "language": "Swedish",
+        "country": "Sweden"
+    },
+    {
+        "greeting": "Czesc",
+        "language": "Polish",
+        "country": "Poland"
+    },
+    {
+        "greeting": "Hola",
+        "language": "Spanish",
+        "country": "Mexico"
+    },
+    {
+        "greeting": "Ni hao",
+        "language": "Chinese",
+        "country": "China"
+    },
+    {
+        "greeting": "Kon'nichiwa",
+        "language": "Japanese",
+        "country": "Japan"
+    },
+    {
+        "greeting": "Annyeonghaseyo",
+        "language": "Korean",
+        "country": "North and South Korea"
+    },
+    {
+        "greeting": "Shalom",
+        "language": "Hebrew",
+        "country": "Israel"
+    },
+    {
+        "greeting": "Sah-wahd-dee",
+        "language": "Thai",
+        "country": "Thailand"
+    },
+    {
+        "greeting": "Merhaba",
+        "language": "Turkish",
+        "country": "Turkey"
+    },
+    {
+        "greeting": "Privet",
+        "language": "Russian",
+        "country": "Russia"
+    },
+    {
+        "greeting": "Marhaba",
+        "language": "Arabic",
+        "country": "Egypt"
+    },
+    {
+        "greeting": "Hujambo",
+        "language": "Swahili",
+        "country": "Kenya"
+    },
+    {
+        "greeting": "Ola",
+        "language": "Portuguese",
+        "country": "Brazil"
+    }
+];

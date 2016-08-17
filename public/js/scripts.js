@@ -41,7 +41,7 @@ function addUser() {
 
 }
 
-// Get the current timestamp to display in the chat.
+// Get the current timestamp to display in the chat next to the message.
 function getCurrentTime() {
     var datetime = new Date();
     var hours = datetime.getHours();
@@ -55,10 +55,16 @@ function getCurrentTime() {
     return hours + ':' + minutes + ':' + seconds;
 }
 
+function getGreeting() {
+    var greetingsArr = greetings;
+    console.log(greetingsArr);
+}
+
+getGreeting();
+
 // processMessage function is called when the chat service sends a message.
 // jQuery object with the response and insert message after converstaion.
 function processMessage(username, data) {
-
     $('<span class="message">' + '[' + getCurrentTime() + '] ' + '<strong>' + username + ':</strong> ' + data + '</span><br/>').insertAfter($('#conversation'));
 }
 
