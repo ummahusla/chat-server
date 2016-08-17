@@ -1,6 +1,3 @@
-console.log(React);
-console.log(ReactDOM);
-
 var socket;
 var userConnected;
 
