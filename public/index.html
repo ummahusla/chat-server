@@ -22,22 +22,8 @@
 
     <body>
 
-        <nav class="top-bar" data-topbar role="navigation">
-            <ul class="title-area">
-                <li class="name">
-                    <h1><a id="logo-text" href="#">Chat Server</a></h1>
-                </li>
-                <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-            </ul>
-
-            <section class="top-bar-section">
-                <ul class="right">
-                    <li><a href="https://github.com/ummahusla/Chat-Server/"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a></a></li>
-                    <li><a href="https://github.com/ummahusla/Chat-Server/archive/master.zip"><i class="fa fa-download" aria-hidden="true"></i> Download</a></li>
-                    <li><a href="https://twitter.com/edvinsantonovs"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a></li>
-                </ul>
-            </section>
-        </nav>
+        <div id="nav-wrap">
+        </div>
 
         <div class="body-wrap">
             <div id="users-wrap" class="small-12 large-2 columns">
@@ -69,7 +55,9 @@
         <script src="js/sweetalert.min.js"></script>
         <script src="js/react/react.js"></script>
         <script src="js/react/react-dom.js"></script>
+        <script src="https://npmcdn.com/babel-core@5.8.38/browser.min.js"></script>
         <script src="js/scripts.js"></script>
+        <script type="text/babel" src="js/react_app.js"></script>
 
         <script>
             $(document).foundation();
