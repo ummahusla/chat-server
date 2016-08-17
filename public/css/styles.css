@@ -28,9 +28,16 @@ span a:hover {
     color: #f39c12 !important;
     border-bottom: 1px dotted #f39c12 !important;
 }
+.sweet-alert button {
+    background: #2c3e50 !important;
+}
+.sweet-alert input:focus {
+    box-shadow: 0px 0px 3px #2c3e50;
+    border: 1px solid #2c3e50;
+}
 
 /* Main styles */
-body, p, a, span, li, h1, h2, h3, h4, h5, h6 {
+body, p, a, span, li, h1, h2, h3, h4, h5, h6, button, .button {
     font-family: 'Inconsolata', monospace !important;
 }
 .body-wrap {
@@ -66,4 +73,23 @@ body, p, a, span, li, h1, h2, h3, h4, h5, h6 {
 
 #message-wrap {
     padding: 30px 30px 0 0;
+}
+
+#message-wrap #data {
+    box-shadow: none;
+    border: 1px dotted #2c3e50;
+    border-radius: 5px;
+    height: 2.8rem;
+}
+
+#message-wrap #data:focus {
+    box-shadow: 0px 0px 3px #2c3e50;
+    border: 1px solid #2c3e50;
+}
+
+#message-wrap .send-msg {
+    width: 100%;
+    background: #2c3e50 !important;
+    font-weight: bold;
+    border-radius: 5px;
 }
