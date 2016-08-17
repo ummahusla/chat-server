@@ -55,13 +55,6 @@ function getCurrentTime() {
     return hours + ':' + minutes + ':' + seconds;
 }
 
-function getGreeting() {
-    var greetingsArr = greetings;
-    console.log(greetingsArr);
-}
-
-getGreeting();
-
 // processMessage function is called when the chat service sends a message.
 // jQuery object with the response and insert message after converstaion.
 function processMessage(username, data) {
