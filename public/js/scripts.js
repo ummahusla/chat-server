@@ -43,10 +43,15 @@ function addUser() {
 // Get the current timestamp to display in the chat.
 function getCurrentTime() {
     var datetime = new Date();
-    datetime.getHours();
-    datetime.getMinutes();
-    datetime.getSeconds();
-    return datetime.getHours() + ':' + datetime.getMinutes() + ':' + datetime.getSeconds();
+    var hours = datetime.getHours();
+    var minutes = datetime.getMinutes();
+    var seconds = datetime.getSeconds();
+
+    if (seconds < 10) {
+        seconds = '0' + seconds;
+    }
+
+    return hours + ':' + minutes + ':' + seconds;
 }
 
 // processMessage function is called when the chat service sends a message.
