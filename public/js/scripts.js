@@ -7,8 +7,8 @@ $(document).ready(function() {
     socket.on('connect', addUser);
     socket.on('updatechat', processMessage);
     socket.on('updateusers', updateUserList);
-    $('#datasend').click(sendMessage);
-    $('#data').keypress(processEnterPress);
+    // $('#datasend').click(sendMessage);
+    // $('#data').keypress(processEnterPress);
 })
 
 // Add the addUser function, which clals the emit method on the socket to call
@@ -70,17 +70,17 @@ function updateUserList(data) {
 }
 
 // sendMessage function is called to send a message to the server.
-function sendMessage() {
-    var message = $('#data').val();
-    message = message.replace(/<(?:.|\n)*?>/gm, '');
-    $('#data').val('');
-    if(!message) {
-        sweetAlert("Oops...", "You've didn\'t entered a message!", "error");
-    } else {
-        socket.emit('sendchat', message);
-    }
-    $('#data').focus();
-}
+// function sendMessage() {
+//     var message = $('#data').val();
+//     message = message.replace(/<(?:.|\n)*?>/gm, '');
+//     $('#data').val('');
+//     if(!message) {
+//         sweetAlert("Oops...", "You've didn\'t entered a message!", "error");
+//     } else {
+//         socket.emit('sendchat', message);
+//     }
+//     $('#data').focus();
+// }
 
 // Function is called when the user presses the Enter key.
 function processEnterPress(e) {
