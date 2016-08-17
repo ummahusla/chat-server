@@ -1,6 +1,8 @@
 # Chat Server [WIP]
 
-TODO: Write a project description
+Bonsua! [**Chat Server**](https://github.com/ummahusla/Chat-Server/) is built with [**Node.js**](https://nodejs.org), [**Express.js**](http://expressjs.com/) and [**Socket.io**](http://socket.io/).
+
+![](screenshot.png)
 
 ## Installation and Usage
 
