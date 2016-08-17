@@ -27,6 +27,7 @@ function addUser() {
              swal.showInputError("Hey, we need you to enter your username!");
              return false
          }
+         inputValue = inputValue.replace(/<(?:.|\n)*?>/gm, '');
          swal("Nice!", "Your username is " + inputValue, "success");
          socket.emit('adduser', inputValue);
      });
@@ -72,6 +73,7 @@ function updateUserList(data) {
 // sendMessage function is called to send a message to the server.
 function sendMessage() {
     var message = $('#data').val();
+    message = message.replace(/<(?:.|\n)*?>/gm, '');
     $('#data').val('');
     if(!message) {
         sweetAlert("Oops...", "You've didn\'t entered a message!", "error");
