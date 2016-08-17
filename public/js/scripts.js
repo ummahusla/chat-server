@@ -138,7 +138,19 @@ var MessageBox = React.createClass({
     },
 });
 
+var UserListBox = React.createClass({
+    render: function() {
+        return (
+            <div>
+                <h3>Users</h3>
+                <div id="users"></div>
+            </div>
+        )
+    }
+});
+
 
 ReactDOM.render(<TopBarBox />, document.getElementById('nav-wrap'));
 ReactDOM.render(<ChatNoticeBox />, document.getElementById('chat-notice'));
 ReactDOM.render(<MessageBox />, document.getElementById('message-wrap'));
+ReactDOM.render(<UserListBox />, document.getElementById('users-wrap'));
