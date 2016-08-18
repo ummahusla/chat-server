@@ -1,7 +1,4 @@
-var socket;
-var userConnected;
-
-socket = io.connect('http://localhost:1337');
+var socket = io.connect('http://localhost:1337');
 socket.on('connect', addUser);
 socket.on('updatechat', processMessage);
 socket.on('updateusers', updateUserList);
@@ -28,6 +25,8 @@ function addUser() {
      });
 
     // Checks if the user is connected
+    var userConnected;
+    
     if(socket.socket.connected) {
         userConnected = true;
     } else {
