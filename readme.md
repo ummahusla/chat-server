@@ -1,6 +1,6 @@
 # Chat Server
 
-Bonsua! [**Chat Server**](https://github.com/ummahusla/Chat-Server/) is built with [**React**](https://facebook.github.io/react/) [**Node.js**](https://nodejs.org), [**Express.js**](http://expressjs.com/) and [**Socket.io**](http://socket.io/).
+Bonsua! [**Chat Server**](https://github.com/ummahusla/Chat-Server/) is built with [**React**](https://facebook.github.io/react/), [**Node.js**](https://nodejs.org), [**Express.js**](http://expressjs.com/) and [**Socket.io**](http://socket.io/).
 
 ![](screenshot.png)
 
