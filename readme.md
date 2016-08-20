@@ -1,6 +1,6 @@
 # Chat Server
 
-Bonsua! [**Chat Server**](https://github.com/ummahusla/Chat-Server/) is built with [**React**](https://facebook.github.io/react/), [**Node.js**](https://nodejs.org), [**Express.js**](http://expressjs.com/) and [**Socket.io**](http://socket.io/).
+Bonsua! [**Chat Server**](https://github.com/ummahusla/Chat-Server/) is built with [**React**](https://facebook.github.io/react/), [**Node**](https://nodejs.org), [**Express**](http://expressjs.com/) and [**Socket.io**](http://socket.io/).
 
 ![](screenshot.png)
 
@@ -10,8 +10,9 @@ Bonsua! [**Chat Server**](https://github.com/ummahusla/Chat-Server/) is built wi
 2. `cd your-folder`
 3. `npm install`
 4. `cd public/js/`
-5. `vi script.js` and replace `var socket = io.connect('https://chat-server-heroku.herokuapp.com/');` with `var socket = io.connect('http://localhost:1337/');`
-5. `npm start` or `node app.js` or `nodemon`
+5. `vi script.js`
+6. Replace `var socket = io.connect('https://chat-server-heroku.herokuapp.com/');` with `var socket = io.connect('http://localhost:1337/');`
+7. `npm start` or `node app.js` or `nodemon`
 
 P.S. In order to run a node on a different port, use `PORT=8080 node app.js`.
 
