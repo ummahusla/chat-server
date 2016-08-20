@@ -2,7 +2,7 @@
 
 Bonsua! [**Chat Server**](https://github.com/ummahusla/Chat-Server/) is built with [**React**](https://facebook.github.io/react/), [**Node**](https://nodejs.org), [**Express**](http://expressjs.com/) and [**Socket.io**](http://socket.io/). Demo is available [**here**](https://chat-server-heroku.herokuapp.com/).
 
-![](screenshot.png)
+![](screenshot.jpg)
 
 ## Installation and Usage
 
