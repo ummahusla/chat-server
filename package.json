@@ -4,7 +4,7 @@
   "description": "A basic chat server usign WebSockets and Socket.io",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./bin/www"
   },
   "engines": {
     "node": "~5.0.2",
