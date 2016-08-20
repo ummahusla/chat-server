@@ -1,6 +1,6 @@
 # Chat Server
 
-Bonsua! [**Chat Server**](https://github.com/ummahusla/Chat-Server/) is built with [**React**](https://facebook.github.io/react/), [**Node**](https://nodejs.org), [**Express**](http://expressjs.com/) and [**Socket.io**](http://socket.io/).
+Bonsua! [**Chat Server**](https://github.com/ummahusla/Chat-Server/) is built with [**React**](https://facebook.github.io/react/), [**Node**](https://nodejs.org), [**Express**](http://expressjs.com/) and [**Socket.io**](http://socket.io/). Demo is available [**here**](https://chat-server-heroku.herokuapp.com/).
 
 ![](screenshot.png)
 
@@ -23,10 +23,6 @@ P.S. In order to run a node on a different port, use `PORT=8080 node app.js`.
 3. Commit your changes: `git commit -am 'Add some feature'`
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
-
-## Demo
-
-[**Demo**](https://chat-server-heroku.herokuapp.com/)
 
 ## Credits
 
