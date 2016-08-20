@@ -136,7 +136,7 @@ body, p, a, span, li, h1, h2, h3, h4, h5, h6, button, .button {
         height: 300px;
     }
     #message-wrap {
-        padding: 65px 15px 0;
+        padding: 70px 15px 0;
     }
 }
 
@@ -145,7 +145,7 @@ body, p, a, span, li, h1, h2, h3, h4, h5, h6, button, .button {
         height: 400px;
     }
     #message-wrap {
-        padding: 40px 15px 0;
+        padding: 45px 15px 0;
     }
 }
 
