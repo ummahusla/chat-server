@@ -24,9 +24,9 @@ P.S. In order to run a node on a different port, use `PORT=8080 node app.js`.
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
 
-## History
+## Demo
 
-TODO: Write history
+[**Demo**](https://chat-server-heroku.herokuapp.com/)
 
 ## Credits
 
