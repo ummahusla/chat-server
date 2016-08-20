@@ -9,7 +9,9 @@ Bonsua! [**Chat Server**](https://github.com/ummahusla/Chat-Server/) is built wi
 1. `git clone https://github.com/ummahusla/Chat-Server.git your-folder`
 2. `cd your-folder`
 3. `npm install`
-4. `node app.js` or `nodemon`
+4. `cd public/js/`
+5. `vi script.js` and replace `var socket = io.connect('https://chat-server-heroku.herokuapp.com/');` with `var socket = io.connect('http://localhost:1337/');`
+5. `npm start` or `node app.js` or `nodemon`
 
 P.S. In order to run a node on a different port, use `PORT=8080 node app.js`.
 
