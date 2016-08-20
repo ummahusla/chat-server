@@ -26,7 +26,7 @@ function addUser() {
 
     // Checks if the user is connected
     var userConnected;
-    
+
     if(socket.socket.connected) {
         userConnected = true;
     } else {
@@ -42,9 +42,9 @@ function getCurrentTime() {
     var minutes = datetime.getMinutes();
     var seconds = datetime.getSeconds();
 
-    if (seconds < 10) {
-        seconds = '0' + seconds;
-    }
+    if (hours < 10) hours = '0' + hours;
+    if (minutes < 10) minutes = '0' + minutes;
+    if (seconds < 10) seconds = '0' + seconds;
 
     return hours + ':' + minutes + ':' + seconds;
 }
