@@ -14,7 +14,7 @@
     "nodejs"
   ],
   "author": "Edvins Antonovs",
-  "license": "BSD",
+  "license": "MIT",
   "private": true,
   "dependencies": {
       "express": "3.0.x",
