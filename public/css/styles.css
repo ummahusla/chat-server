@@ -142,7 +142,7 @@ body, p, a, span, li, h1, h2, h3, h4, h5, h6, button, .button {
 
 @media only screen and (min-width: 40.0625em) {
     .body-wrap {
-        height: 400px;
+        height: 550px;
     }
     #message-wrap {
         padding: 45px 15px 0;
