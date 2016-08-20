@@ -1,4 +1,4 @@
-var socket = io.connect('http://localhost:1337');
+var socket = io.connect('https://localhost:1337');
 socket.on('connect', addUser);
 socket.on('updatechat', processMessage);
 socket.on('updateusers', updateUserList);
