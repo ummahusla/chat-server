@@ -19,9 +19,6 @@
     -webkit-transition: all .2s ease-in;
     transition: all .2s ease-in;
 }
-.top-bar-section li:not(.has-form) a:not(.button):hover, .top-bar .name h1 a:hover {
-    color: #fff !important;
-}
 .top-bar.expanded .toggle-topbar a {
     color: #fff !important;
     -moz-transition: all .2s ease-in;
@@ -137,6 +134,9 @@ body, p, a, span, li, h1, h2, h3, h4, h5, h6, button, .button {
     }
     #message-wrap {
         padding: 95px 15px 0;
+    }
+    .top-bar-section li:not(.has-form) a:not(.button):hover, .top-bar .name h1 a:hover {
+        color: #fff !important;
     }
 }
 
