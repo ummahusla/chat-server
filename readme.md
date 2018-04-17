@@ -1,6 +1,8 @@
 # Chat Server
 
-Bonsua! [**Chat Server**](https://github.com/ummahusla/Chat-Server/) is built with [**React**](https://facebook.github.io/react/), [**Node**](https://nodejs.org), [**Express**](http://expressjs.com/) and [**Socket.io**](http://socket.io/). Demo is available [**here**](https://chat-server-heroku.herokuapp.com/).
+> **Note**: Front-end is built with React, but is in a very bad state, and should be not used in production for many reasons. PRs are welcome.
+
+[**Chat Server**](https://github.com/ummahusla/Chat-Server/) is built with [**React**](https://facebook.github.io/react/), [**Node**](https://nodejs.org), [**Express**](http://expressjs.com/) and [**Socket.io**](http://socket.io/). Demo is available [**here**](https://chat-server-heroku.herokuapp.com/).
 
 ![](screenshot.jpg)
 
@@ -32,7 +34,7 @@ P.S. In order to run a node on a different port, use `PORT=8080 node app.js`.
 
 The MIT License (MIT)
 
-Copyright (c) 2016 Edvins Antonovs
+Copyright (c) 2018 Edvins Antonovs
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
